@@ -14,25 +14,24 @@ SELECT genre,
  GROUP BY genre
 HAVING AVG(rating) > 8
 
-(vybrat zhanr, poschitat srednij rating, post otfiltrovat)
+
 
 SELECT MIN(release_year)
   FROM movies
  WHERE genre = 'Drama';
 
- (najtu minimalsnyj god vypuska iz kino, gde genre drama)
 
 SELECT COUNT(*)
   FROM movies;
 
-(schitaet vse filmy)
+
 
 
 SELECT AVG(rating)
   FROM movies
  WHERE genre = 'Drama';
 
- (scitaet sredniy rating)
+
 
 SELECT SUM(budget)
   FROM movies
@@ -53,7 +52,7 @@ SELECT movies.title,
   LEFT JOIN reviews
     ON movies.id = reviews.movie_id;
 
-(fisrst table, movies, complete, joined table reviews)
+
 
 SELECT movies.title,
        movies.release_year,
